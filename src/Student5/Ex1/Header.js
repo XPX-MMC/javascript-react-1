@@ -1,19 +1,25 @@
-import React from "react";
+import React from 'react'
 
-export const Header = () =>{
 
-    return(
-        <div className = "Main">
-         Dollar Food Store
-         <div>
-        Home|Login|Support|FAQ
-        </div>
-    </div> 
-         
-        
-    )
+
+
+export const Header = () => {
+
+return (
+
+ <><div class="logo">
+
+Dollar Food Store
+
+</div><nav class="nav">
+
+Home | Login | Support | FAQ
+
+ </nav></>
+
+)
+
 }
-
 
 
 
