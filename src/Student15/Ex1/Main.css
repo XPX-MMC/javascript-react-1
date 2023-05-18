@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.logo {
+    background-color: burlywood;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.Nav {
+    background-color: lightcoral;
+}
+
+.Menu {
+    background-color: aqua;
+}
+
+.Food {
+    background-color: lemonchiffon;
+}
+
+.Drink {
+    background-color:lightblue;
+}
+
+.Dessert {
+    background-color: lightpink;
+}
+
+.Footer {
+    background-color: lightgreen;
+}
