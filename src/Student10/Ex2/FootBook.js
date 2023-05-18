@@ -1,6 +1,6 @@
 import React from "react";
 
-export const FootBook = () => {
+export const Footbook = () => {
   return (
     <div className="Posts">
       <h2>Posts</h2>
