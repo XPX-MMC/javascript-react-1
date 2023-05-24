@@ -1,21 +1,30 @@
-
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 export const SentenceBuilder = () => {
-    
-        const [inputValue, setInputValue] = useState('');
-        const string = useRef('')  
-        
+    let [string, setString] = useState('');
+	let [inputValue, setInputValue] = useState('');
+	
+
+	const stringBuilder = () => {
+		setString((string += inputValue + ' '));
+        setInputValue('')
+	};
+
 	return (
 		<>
 			<h1>Sentence Builder</h1>
-			<p>Sentence: <span>{inputValue}</span></p>
-            <input type='text' value={inputValue} onChange={(text)=>{setInputValue(text.target.value)}}></input>
-            <button onClick={()=> string.push}>Add Word</button>
-            <button onClick={()=> setInputValue('')}>Reset</button>
+			<p>
+				Sentence: <span>{string}</span>
+			</p>
+			<input
+				type='text'
+				value={inputValue}
+				onChange={(text) => {
+					setInputValue(text.target.value);
+				}}
+			></input>
+			<button onClick={() => stringBuilder()}>Add Word</button>
+			<button onClick={() => setString('')}>Reset</button>
 		</>
-        
 	);
 };
-
-
